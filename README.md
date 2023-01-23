@@ -12,13 +12,13 @@ Using nmap command : nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse
 Using comand: smbclient //10.10.137.110/anonymous I found list the files on the share. (file log.txt)
 
 #Task 4
-Using the command: smbget -R smb://10.10.137.110/anonymous I get file 'log.txt' and then I can open it. In this file is information about FTP is running on 21 port.
+Using the command: smbget -R smb://10.10.137.110/anonymous I get file `log.txt` and then I can open it. In this file is information about FTP is running on 21 port.
 
 #Task 5
-Using nmap comannd: nmap -p 111 --script=nfs-ls,nfs-statfs,nfs-showmount 10.10.137.110 I found mount */var*
+Using nmap comannd: nmap -p 111 --script=nfs-ls,nfs-statfs,nfs-showmount 10.10.137.110 I found mount `*/var*`
 
 #Task 6
-The version of ProFtpd is 1.3.5 and in exploit-db.com  website has 4 exploits. 
+The version of `ProFtpd is 1.3.5` and in exploit-db.com  website has `4 exploits`. 
 
 #Task 7
 Exploit description talks about using SITE CPFR and SITE CPTO commands that are implemented in the mod_copy module. I can use these commands to copy files from the filesystem with an unauthenticated client.
