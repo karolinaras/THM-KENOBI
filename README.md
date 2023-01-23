@@ -9,10 +9,10 @@ Using *nmap* I scan ip 10.10.137.110 and I found 7 open ports.
 Using nmap command : nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse 10.10.137.110 I found 3 shares.
 
 #Task 3
-Using comand: smbclient //10.10.137.110/anonymous I found list the files on the share. ( file log.txt)
+Using comand: smbclient //10.10.137.110/anonymous I found list the files on the share. (file log.txt)
 
 #Task 4
-Using the command: smbget -R smb://10.10.137.110/anonymous I get file *log.txt* and then I can open it. In this file is information about FTP is running on 21 port.
+Using the command: smbget -R smb://10.10.137.110/anonymous I get file 'log.txt' and then I can open it. In this file is information about FTP is running on 21 port.
 
 #Task 5
 Using nmap comannd: nmap -p 111 --script=nfs-ls,nfs-statfs,nfs-showmount 10.10.137.110 I found mount */var*
