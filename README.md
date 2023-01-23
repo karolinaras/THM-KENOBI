@@ -46,4 +46,13 @@ Exploit description talks about using SITE CPFR and SITE CPTO commands that are 
 
 ![This is an image](https://github.com/karolinaras/THM-KENOBI/blob/fa47a9da1a6b110af85006f070fba73bda76f697/KENOBI8.png)
 
+#Task 8
 
+I let mount the /var/tmp directory to  my machine using commands: 
+
+````
+mkdir /mnt/kenobiNFS
+mount machine_ip:/var /mnt/kenobiNFS
+ls -la /mnt/kenobiNFS
+````
+![This is an image](https://github.com/karolinaras/THM-KENOBI/blob/944e6a98913ea9ac8b13d03c3b4ee42bb24a7ec6/KENOBI9.png)
